@@ -7,7 +7,9 @@ Lab2 consists of 3 exercises. In [exercise 1](./naivecoin_1/), you will learn ho
 ### Quick Start
 ```sh
 #
-cd naivecoin_1 
+cd naivecoin_1
+# install dependencies
+npm install 
 # run main code 
 npm run-script main
 # clean the local database
