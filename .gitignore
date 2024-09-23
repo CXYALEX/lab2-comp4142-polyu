@@ -8,3 +8,6 @@ yarn.lock
 data
 node_modules/
 data/
+naivecoin_1/node_modules/
+naivecoin_2/node_modules/
+naivecoin_3/node_modules/
