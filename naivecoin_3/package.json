@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "elliptic": "^6.5.7",
+    "fs-extra": "^11.2.0",
     "ramda": "^0.30.1"
   }
 }
