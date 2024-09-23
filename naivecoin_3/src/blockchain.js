@@ -45,7 +45,13 @@ class Blockchain {
         }
     }
     removeBlockTransactionsFromTransactions(newBlock) {
-        this.transactions = R.reject((transaction) => { return R.find(R.propEq('id', transaction.id), newBlock.transactions); }, this.transactions);
+        for (let i = 0; i < this.transactions.length; i++) {
+            const transaction = this.transactions[i];
+            if (newBlock.transactions.some(newTransaction => newTransaction.id === transaction.id)) {
+              this.transactions.splice(i, 1);
+              i--;
+            }
+          }
         this.transactionsDb.write(this.transactions);
     }
 

@@ -31,7 +31,7 @@ class Miner {
         const previousHash = previousBlock.hash;
         const timestamp = new Date().getTime() / 1000;
         const nonce = 0;
-        const transactions = blockchain.transactions;
+        const transactions = JSON.parse(JSON.stringify(blockchain.transactions));
 
         console.log("rewardAddress is ", rewardAddress);
         // Add reward transaction of 50 coins
