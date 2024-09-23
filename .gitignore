@@ -6,3 +6,5 @@ coverage
 yarn.lock
 .vscode
 data
+node_modules/
+data/
